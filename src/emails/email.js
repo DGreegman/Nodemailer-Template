@@ -20,8 +20,8 @@ const send_email = async (options) => {
         viewEngine: {
             extName: '.handlebars',
             partialsDir: path.resolve('./src/views/partials/'),
-            // layoutsDir: './emails/layouts',
-            defaultLayout: false
+            layoutsDir: path.resolve('./src/views/'),
+            defaultLayout: 'base'
         },
         viewPath: path.resolve('./src/views/'),
         extName: '.handlebars',
